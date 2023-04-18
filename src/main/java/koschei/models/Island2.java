@@ -1,15 +1,18 @@
 package koschei.models;
 
+
+
+
 public class Island2 {
 
-    private Wood3 wood;
+    private final Chest2_5 chest;
 
-    public Island2(Wood3 wood) {
-        this.wood = wood;
+    public Island2(Chest2_5 chest) {
+        this.chest = chest;
     }
 
     @Override
     public String toString() {
-        return ", на острове дерево " + wood.toString();
+        return ", на том острове дуб стоит" + chest.toString();
     }
 }

@@ -4,13 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Ocean1 {
-
+public class Chest2_5 {
     @Autowired
-    private Island2 island;
+    private final Wood3 wood;
+
+    public Chest2_5(Wood3 wood) {
+        this.wood = wood;
+    }
 
     @Override
     public String toString() {
-        return "есть остров" + island.toString();
+        return ", под дубом сундук зарыт" + wood.toString();
     }
 }
